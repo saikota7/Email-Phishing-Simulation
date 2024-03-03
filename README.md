@@ -1,2 +1,2 @@
-# MoneyTrackerWebApp
-"A money tracker app for managing expenses and income using HTML, CSS, Node.js, and MongoDB."
+# Email Phishing Simulation
+ Phishing awareness platform that detects malicious emails through content analysis
