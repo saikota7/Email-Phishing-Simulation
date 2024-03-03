@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Simulation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Add your CSS styles for the simulation page -->
+</head>
+<body>
+    <div class="simulation-form-container">
+        <div class="simulation-form">
+            <h1 class="title">Phishing Simulation</h1>
+            <form method="post" action="{{ url_for('simulate') }}">
+                <label for="user_emails">Enter email address:</label>
+                <input type="text" name="user_emails" required>
+                <label for="phishing_email_content">Enter phishing email content:</label>
+                <textarea name="phishing_email_content" required></textarea>
+                <button type="submit">Send Phishing Email</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

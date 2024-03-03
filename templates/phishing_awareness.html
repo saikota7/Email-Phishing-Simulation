@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Add your CSS styles for the awareness page -->
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1 class="title">Phishing Awareness</h1>
+        </div>
+
+        <p>Phishing is a common cyber threat. Here are some tips to stay safe:</p>
+
+        <ul>
+            <li>Verify the sender's email address before clicking on any links.</li>
+            <li>Avoid clicking on links or downloading attachments from unknown or suspicious emails.</li>
+            <li>Check for spelling and grammar errors in emails, as phishing emails often contain these mistakes.</li>
+            <!-- Add more awareness tips -->
+        </ul>
+
+        <p>Examples of common phishing tactics:</p>
+
+        <div class="example">
+            <h3>Example 1: Fake Login Page</h3>
+            <p>Phishers may create fake login pages to steal your credentials. Always verify the URL before entering your login details.</p>
+            <p class="tip">Tip: Hover over links to view the actual URL before clicking.</p>
+            <img src="{{ url_for('static', filename='fakelogin.webp') }}" alt="Fake Login Page" class="center medium-image">
+        </div>
+
+        <div class="example">
+            <h3>Example 2: Urgent Requests</h3>
+            <p>Be cautious of emails claiming urgent action is required. Phishers often use urgency to manipulate users into providing sensitive information.</p>
+            <p class="tip">Tip: Verify urgent requests by contacting the sender through a trusted method.</p>
+            <img src="{{ url_for('static', filename='paypal-phishing.png') }}" alt="Urgent Request Email" class="center medium-image">
+        </div>
+
+        <!-- Additional examples -->
+        <div class="example">
+            <h3>Example 3: Prize Winner Scam</h3>
+            <p>Watch out for emails claiming you've won a prize or lottery that you never entered. Avoid providing personal information or payment.</p>
+            <p class="tip">Tip: Verify such claims with the official organization through their official channels.</p>
+            <img src="{{ url_for('static', filename='prize-scam.jpg') }}" alt="Prize Winner Scam" class="center medium-image">
+        </div>
+
+        <div class="example">
+            <h3>Example 4: Phishing Links in Text</h3>
+            <p>Phishers might use misleading text to make users click on malicious links. Always check the actual destination of links before clicking.</p>
+            <p class="tip">Tip: Hover over links to preview the URL before clicking.</p>
+            <img src="{{ url_for('static', filename='text-phishing.jpg') }}" alt="Phishing Links in Text" class="center medium-image">
+        </div>
+        <!-- End additional examples -->
+        <footer class="footer">
+            <p>Stay informed and report any suspicious emails to your IT department.</p>
+        </footer>
+    </div>
+</body>
+</html>
